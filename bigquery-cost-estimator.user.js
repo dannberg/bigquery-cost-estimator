@@ -7,7 +7,7 @@
 // @match        https://console.cloud.google.com/bigquery*
 // @run-at       document-end
 // @license      MIT
-// @homepageURL  
+// @homepageURL  https://greasyfork.org/en/scripts/525352-bigquery-cost-estimator
 // @supportURL   https://github.com/dannberg/bigquery-cost-estimator/issues
 // @grant        none
 // ==/UserScript==
