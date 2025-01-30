@@ -2,7 +2,7 @@
 
 📊 **Automatically replaces BigQuery’s query size estimate (GB) with the estimated cost in USD.**
 
-![GitHub](https://img.shields.io/github/license/dannberg/bigquery-cost-estimator)
+![GitHub](https://img.shields.io/github/license/dannberg/bigquery-cost-estimator?cacheSeconds=60)
 ![GreasyFork](https://img.shields.io/badge/GreasyFork-Script-orange)
 ![BigQuery](https://img.shields.io/badge/Google-Cloud-blue)
 
