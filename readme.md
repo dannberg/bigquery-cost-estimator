@@ -31,7 +31,7 @@ This script works with:
 - [**TamperMonkey**](https://www.tampermonkey.net/)
 
 ### **2️⃣ Install the Script**
-🔹 **From GreasyFork**: [BigQuery Cost Estimator](#)
+🔹 **From GreasyFork**: [BigQuery Cost Estimator](https://greasyfork.org/en/scripts/525352-bigquery-cost-estimator)
 
 🔹 **From GitHub**:
 Click **[Here](https://github.com/dannberg/bigquery-cost-estimator/raw/refs/heads/master/bigquery-cost-estimator.user.js)** to install manually.
@@ -88,6 +88,6 @@ This project is licensed under the MIT License – you’re free to use, modify,
 
 ---
 ## 🔗 Links & Resources
-- 📜 **GreasyFork Script**: [BigQuery Cost Estimator](#)
+- 📜 **GreasyFork Script**: [BigQuery Cost Estimator](https://greasyfork.org/en/scripts/525352-bigquery-cost-estimator)
 - 🏗 **GitHub Repository**: [GitHub](https://github.com/dannberg/bigquery-cost-estimator)
 - 🌎 **Google BigQuery Pricing**: [BigQuery Pricing Docs](https://cloud.google.com/bigquery/pricing)
