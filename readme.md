@@ -31,10 +31,10 @@ This script works with:
 - [**TamperMonkey**](https://www.tampermonkey.net/)
 
 ### **2️⃣ Install the Script**
-🔹 **From GreasyFork**: [BigQuery Cost Estimator](https://greasyfork.org/en/scripts/your-script-id)
+🔹 **From GreasyFork**: [BigQuery Cost Estimator](#)
 
 🔹 **From GitHub**:
-Click **[Here](https://github.com/yourgithubusername/bigquery-cost-estimator/raw/main/bigquery-cost-estimator.user.js)** to install manually.
+Click **[Here](https://github.com/dannberg/bigquery-cost-estimator/raw/refs/heads/master/bigquery-cost-estimator.user.js)** to install manually.
 
 ### **3️⃣ Open BigQuery & Run a Query**
 - The **GB estimate** will be replaced with the **cost estimate** automatically.
@@ -72,7 +72,7 @@ Want to improve this script? PRs are welcome!
 1. **Fork this repo**
 2. **Clone your fork**
 ```sh
-   git clone https://github.com/yourgithubusername/bigquery-cost-estimator.git
+   git clone https://github.com/dannberg/bigquery-cost-estimator.git
 ```
 3. **Make changes & push**
 ```sh
@@ -89,5 +89,5 @@ This project is licensed under the MIT License – you’re free to use, modify,
 ---
 ## 🔗 Links & Resources
 - 📜 **GreasyFork Script**: [BigQuery Cost Estimator](#)
-- 🏗 **GitHub Repository**: [GitHub](#)
+- 🏗 **GitHub Repository**: [GitHub](https://github.com/dannberg/bigquery-cost-estimator)
 - 🌎 **Google BigQuery Pricing**: [BigQuery Pricing Docs](https://cloud.google.com/bigquery/pricing)
