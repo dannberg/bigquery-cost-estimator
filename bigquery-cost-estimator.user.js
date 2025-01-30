@@ -8,7 +8,7 @@
 // @run-at       document-end
 // @license      MIT
 // @homepageURL  
-// @supportURL   https://github.com/dannberg
+// @supportURL   https://github.com/dannberg/bigquery-cost-estimator/issues
 // @grant        none
 // ==/UserScript==
 
