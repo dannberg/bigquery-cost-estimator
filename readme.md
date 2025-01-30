@@ -16,10 +16,10 @@ This script dynamically **replaces that text with the estimated cost** based on 
 ---
 
 ## ✨ **Features**
-✔ **Real-time cost calculation** as you type queries
-✔ **MutationObserver support** for dynamic updates
-✔ **Lightweight & fast**, no external dependencies
-✔ **Works in Chrome, Firefox, Edge, Brave, & Safari**
+- ✔ **Real-time cost calculation** as you type queries
+- ✔ **MutationObserver support** for dynamic updates
+- ✔ **Lightweight & fast**, no external dependencies
+- ✔ **Works in Chrome, Firefox, Edge, Brave, & Safari**
 
 ---
 
