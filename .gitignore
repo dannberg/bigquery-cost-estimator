@@ -1,0 +1,32 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS resource forks
+._*
+
+# macOS system-generated thumbnail cache files
+**/._*
+
+# macOS metadata files
+.metadata_never_index
+.metadata_never_index_unless_rootfs
+
+# macOS Trash files
+.Trashes
+
+# macOS Spotlight files
+.Spotlight-V100
+
+# macOS Finder attributes
+.fseventsd
+
+# Vim swap files (if using Vim)
+*.swp
+*.swo
+
+# macOS Virtual Volumes (APFS, external drives, etc.)
+.VolumeIcon.icns
+.TemporaryItems
+.ComApple*
