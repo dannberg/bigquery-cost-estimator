@@ -6,6 +6,8 @@
 ![GreasyFork](https://img.shields.io/badge/GreasyFork-Script-orange)
 ![BigQuery](https://img.shields.io/badge/Google-Cloud-blue)
 
+![Screenshot of before and after this script is enabled](https://github.com/user-attachments/assets/5e7223f6-055e-490b-927f-70f77f008717)
+
 ## 🚀 **Overview**
 Google BigQuery displays a message like:
 > _"This query will process 11.37 GB when run."_
