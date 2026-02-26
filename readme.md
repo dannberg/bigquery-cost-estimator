@@ -74,7 +74,7 @@ Want to improve this script? PRs are welcome!
 1. **Fork this repo**
 2. **Clone your fork**
 ```sh
-   git clone https://github.com/dannberg/bigquery-cost-estimator.git
+   git clone https://github.com/[YOUR GITHUB NAME]/bigquery-cost-estimator.git
 ```
 3. **Make changes & push**
 ```sh
