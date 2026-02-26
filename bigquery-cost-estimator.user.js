@@ -20,7 +20,7 @@
 
     function updateCost() {
         // Target the specific element inside query-validation-status
-        const statusText = document.querySelector('div.cfc-truncated-text.ng-star-inserted');
+        const statusText = document.querySelector('.cfc-truncated-text[aria-hidden="true"]');
 
         if (statusText && statusText.textContent.includes("This query will process")) {
             // Extract the GB value
