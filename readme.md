@@ -62,7 +62,7 @@ BigQuery now displays:
 
 ## ⚡ **Technical Details**
 - Uses **MutationObserver** to detect changes in BigQuery’s UI.
-- Targets the element: `div.cfc-truncated-text.ng-star-inserted`.
+- Targets the element: `.cfc-truncated-text[aria-hidden="true"]`.
 - **Does not interfere** with BigQuery’s functionality.
 
 ---
