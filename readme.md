@@ -1,6 +1,6 @@
 # **BigQuery Cost Estimator**
 
-📊 **Automatically replaces BigQuery’s query size estimate (GB) with the estimated cost in USD.**
+📊 **Automatically replaces BigQuery’s query size estimate (GB/TB) with the estimated cost in USD.**
 
 ![GitHub](https://img.shields.io/github/license/dannberg/bigquery-cost-estimator?cacheSeconds=60)
 ![GreasyFork](https://img.shields.io/badge/GreasyFork-Script-orange)
@@ -10,10 +10,10 @@
 
 ## 🚀 **Overview**
 Google BigQuery displays a message like:
-> _"This query will process 11.37 GB when run."_
+> _"This query will process 11.37 GB when run."_ or _"This query will process 1.12 TB when run."_
 
 This script dynamically **replaces that text with the estimated cost** based on Google’s **on-demand pricing**.
-💰 **Cost Calculation:** `$6.25 per TB processed`
+💰 **Cost Calculation:** `$6.25 per TB processed` (handles both GB and TB estimates)
 
 ---
 
@@ -39,30 +39,30 @@ This script works with:
 Click **[Here](https://github.com/dannberg/bigquery-cost-estimator/raw/refs/heads/master/bigquery-cost-estimator.user.js)** to install manually.
 
 ### **3️⃣ Open BigQuery & Run a Query**
-- The **GB estimate** will be replaced with the **cost estimate** automatically.
+- The **GB/TB estimate** will be replaced with the **cost estimate** automatically.
 
 ---
 
 ## 🏗 **How It Works**
-1. **Finds the GB estimate** in BigQuery’s UI.
-2. **Extracts the numeric value** from the message.
+1. **Finds the GB/TB estimate** in BigQuery’s UI.
+2. **Extracts the numeric value and unit** from the message.
 3. **Calculates the cost** using `$6.25 per TB`.
-4. **Replaces the text** dynamically.
+4. **Replaces the text** dynamically (consolidates duplicates when BigQuery renders the message multiple times).
 
-📌 **Example Calculation:**
+📌 **Example Calculations:**
 ```
-Query processes: 11.37 GB
-Cost = (11.37 GB ÷ 1024) × 6.25
-Cost = $0.07
+GB: 11.37 GB → Cost = (11.37 ÷ 1024) × 6.25 = $0.07
+TB: 1.12 TB  → Cost = 1.12 × 6.25 = $7.00
 ```
 BigQuery now displays:
-> _"Estimated cost: $0.07"_
+> _"Estimated cost: $0.07"_ or _"Estimated cost: $7.00"_
 
 ---
 
 ## ⚡ **Technical Details**
-- Uses **MutationObserver** to detect changes in BigQuery’s UI.
-- Targets the element: `.cfc-truncated-text[aria-hidden="true"]`.
+- Uses **MutationObserver** (childList and characterData) to detect changes in BigQuery’s UI.
+- Finds the status element via known selectors first, then a content-based DOM search for "This query will process" (handles UI structure changes).
+- When BigQuery renders the estimate in multiple elements, replaces the common parent to avoid duplicate display.
 - **Does not interfere** with BigQuery’s functionality.
 
 ---
